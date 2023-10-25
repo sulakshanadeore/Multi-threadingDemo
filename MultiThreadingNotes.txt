@@ -1,0 +1,68 @@
+
+
+Multi-threading
+It is a process to achieve multi-tasking ,as it saves time and utilises the 
+resources efectively.
+It is achieved using multiple threads that work simultaneously.
+
+namespace System.Threading
+
+Thread
+Mutex
+Monitor
+Semaphore
+Semaphore Slim
+ThreadPool
+
+
+Process: A process represents application, heavy weight
+
+Thread: represents the module of application,light weight,
+subprocess which executes inside the process.
+
+Each Process takes separate memory, but in each process the thread/s will use the memory allocated to the process.
+
+State
+-----
+1)Unstarted
+2)Runnable(Ready to run)
+3)Started/Running
+4)Not Runnable 
+5)Dead
+
+
+1) Unstarted: When instance of thread class is created.
+2) Runnable: Start()  method  is called but not yet started
+3) Started/Running:When the thread is running. Only one thread can run at a time.
+4) NonRunnable:When thread is in sleep/wait mode
+5) Dead: When thread has completed the execution/task then it goes in terminated/dead state.
+
+Thread Class Properties
+
+1) CurrentThread: returns the currently running thread & its a read only property
+2) Name: gets or sets the name of the thread
+3) IsAlive:current thread is alive or not, bool
+4)IsBackground:get or sets the value whether the thread is background or not, bool
+5) ManagedThreadId:read only property, and it gets a unique id for the current managed thread
+
+Thread Class Methods
+
+1)Abort(): It is used to abort the thread, it raises a ThreadAbortException
+2)Interrupt():it is used to interrupt the thread when it is in Wait Sleep Join state
+3)Join():is used to block the other thread, till this thread terminates.(terminates means complete the execution of the task)
+4)Resume():obsolete, used to resume suspended thread.
+5)Sleep(int):suspend the thread for a period of time, in millisecond. It suspend thread for the said milliseconds.
+6)Start():used to start the thread
+7)Suspend():obsolete, used to suspend the thread.
+8)ResetAbort():It is used  to cancel abort request of the thread
+
+
+
+
+
+
+
+
+
+
+
