@@ -1,0 +1,79 @@
+
+
+	Synchronization
+--------------------------------
+
+when 2 or more users want to access a single resource at the same time then a race condtion occurs and to overcome this problem that the resource should not go into deadlock state we need to handle it by allocating the resource to a single user at a single time and when he completes his work with the resource the other user can access the resource. This is called as synchronization of resources.
+Synchronization of threads, the processor can be used by a single task at a single point of time.
+
+
+Print()
+{
+//critical resource---for loop
+
+
+}
+1) lock(this)----> current thread which is at present accessing the resource.
+--------------------------------
+Concurrent---> when u r doing more than one thing at the same time.
+when u r doing more than one thing in parallel.
+overlapping happens then concurrency happens.
+
+
+Join a meeting at 9
+
+complete my breakfast before 9
+
+Start my laptop--8.50 when i m yet doing my breakfast
+start my mail
+start zoom
+enter meeting/id/direct link
+-------------------
+when  u r logging in into a time-sharing system resource.
+1)FCFS Scheduling--- first come first serve
+standing on a  bus stop in a queue---numbering 
+
+2) Round Robin Scheduling-------
+
+Synchronization except Mutex
+---------------------------
+Internal Process--- main---> calling other thread
+-------------------------------------------------------
+
+When not using mutex we donot have control over external process or interprocess communication, if we want to restrict that only one application instance be running at one moment of time , the other instance should be made to wait, which is done using WaitOne.
+
+External Process--- InterProcess
+
+main----> multiple users ---> external process
+
+
+firstmain      Secondmain
+secondmain()
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
